@@ -1,12 +1,11 @@
 #include <stdio.h>
 int main()
 {
-int num,q,r;
+int num,check;
 printf("Enter a number : ");
 scanf("%d",&num);
-q=num/2;
-r=num-2*q;
-switch(r)
+check=num&1;
+switch(check)
 {
 case 1:
 printf("Odd Number !");
