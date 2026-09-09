@@ -9,7 +9,7 @@ n=num;
 while(num!=0)
 {
 digit=num%10;
-new_num+=pow(digit,3);
+new_num+=(int)pow(digit,3);
 num/=10;
 }
 if(n==new_num)
