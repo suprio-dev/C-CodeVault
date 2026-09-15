@@ -2,12 +2,14 @@
 #include <stdio.h>
 int main()
 {
-  int c = 5;
+  int c = 5, k = 4;
   int *ptr = &c;
-  *ptr = ++(*ptr);
-  printf("Pointer-increment : %d\n", *ptr);
-  *ptr = 5;
-  *ptr = --(*ptr);
-  printf("Pointer-decrement : %d\n", *ptr);
+  printf("Pointer: %u\n", ptr);
+  ptr++;
+  printf("Pointer-increment : %u\n", ptr);
+  int *_ptr = &k;
+  printf("Pointer: %u\n", _ptr);
+  _ptr--;
+  printf("Pointer-decrement : %u\n", _ptr);
   return 0;
 }
