@@ -3,7 +3,8 @@
 int main()
 {
 
-  char str[100], old_str[100], count = 0;
+  char str[100], old_str[100];
+  int count = 0;
   printf("Enter a string : ");
   fgets(str, 100, stdin);
   strcpy(old_str, str);

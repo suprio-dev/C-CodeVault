@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include <string.h>
 int main()
 {
-  char str[100];
+  char str[100], ch;
   int count = 0;
   printf("Enter a string : ");
   fgets(str, 100, stdin);
+  printf("Enter a character : ");
+  scanf("%c", &ch);
   for (int i = 0; str[i] != '\0'; i++)
   {
     switch (str[i])
@@ -20,9 +21,9 @@ int main()
     case 'I':
     case 'O':
     case 'U':
-      count++;
+      str[i] = ch;
     }
   }
-  printf("The number of consonants : %d\n", strlen(str) - count - 1);
+  puts(str);
   return 0;
 }

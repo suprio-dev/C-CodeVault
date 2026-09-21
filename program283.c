@@ -1,14 +1,11 @@
-
 #include <stdio.h>
-
+#include <ctype.h>
 int main()
 {
   char str[100];
-  int count = 0;
-  printf("Enter a string : ");
+  printf("Enter the string : ");
   fgets(str, 100, stdin);
   for (int i = 0; str[i] != '\0'; i++)
-    count++;
-  printf("Length of the string is : %d\n", count - 1);
+    printf("%c", toupper(str[i]));
   return 0;
 }

@@ -8,9 +8,9 @@ int main()
   for (int i = 0; str[i] != '\0'; i++)
   {
 
-    if ((str[i] >= '0' && str[i] <= '9'))
+    if (str[i] == ' ')
       count++;
   }
-  printf("The number of digits : %d\n", count);
+  printf("The number of words : %d\n", count + 1);
   return 0;
 }
