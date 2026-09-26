@@ -17,8 +17,8 @@ int main()
     }
   }
   if (c == 1)
-    printf("\nElement Found !");
+    printf("\nSearch Successful !");
   else
-    printf("\nElement not found !");
+    printf("\nSearch Unsuccessful !");
   return 0;
 }
